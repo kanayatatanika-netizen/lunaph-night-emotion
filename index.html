@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="あなたが隠している感情は？月明かりが感情を形にする、LUNAPHの夜の感情診断。"
+    />
+    <meta name="theme-color" content="#10081f" />
+    <meta property="og:title" content="あなたが隠している感情は？ | LUNAPH" />
+    <meta
+      property="og:description"
+      content="あなたが隠している感情は？月明かりが感情を形にする、LUNAPHの夜の感情診断。"
+    />
+    <title>あなたが隠している感情は？ | LUNAPH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="neon-line neon-left"></span>
+      <span class="neon-line neon-right"></span>
+      <span class="noise"></span>
+    </div>
+
+    <header class="site-header">
+      <button class="brand" type="button" data-home aria-label="トップへ戻る">LUNAPH</button>
+      <span class="header-note">EMOTIONS BORN AT NIGHT</span>
+    </header>
+
+    <main>
+      <section class="screen hero is-active" id="intro" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">AFTER WORK / 02:17 AM</p>
+            <h1 id="hero-title">仕事が終わったあと、<br />急に静かになる夜へ。</h1>
+            <p class="hero-hook">靴を脱ぐ。通知を伏せる。ひとりになる。その瞬間、昼に隠した感情が部屋に現れる。</p>
+            <p class="lead">
+              さっきまで笑えていたのに、帰り道で急に不安になる。<br />
+              返信ひとつで眠れなくなる。何気ない一言を朝まで思い出す。<br /><br />
+              その夜に出てくる感情が、ふろむ、くれす、くゆり、めろあ、みちる。<br />
+              10個の仕事後シーンを選んで、今夜あなたの部屋に来る住人を見つけてください。
+            </p>
+
+            <div class="world-flow" aria-label="LUNAPHの世界観">
+              <article data-step="01">
+                <span>昼</span>
+                <strong>昼はちゃんと笑える</strong>
+                <p>仕事中、人前では、求められる自分で立っていられる。</p>
+              </article>
+              <article data-step="02">
+                <span>夜</span>
+                <strong>帰宅後に急に落ちる</strong>
+                <p>部屋に入った瞬間、飲み込んだ気持ちが戻る。</p>
+              </article>
+              <article data-step="03">
+                <span>月</span>
+                <strong>スマホの光で気づく</strong>
+                <p>通知、既読、送った言葉。小さいことが急に刺さる。</p>
+              </article>
+              <article data-step="04">
+                <span>形</span>
+                <strong>感情の住人が来る</strong>
+                <p>くれす、めろあ、くゆり、ふろむ、みちるがベッドのそばに現れる。</p>
+              </article>
+            </div>
+
+            <div class="hero-actions">
+              <button class="primary-button" id="start-button" type="button">
+                仕事後の夜に入る
+                <span aria-hidden="true">→</span>
+              </button>
+              <span class="microcopy">約2分 / 仕事後の10シーン</span>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="LUNAPHの住人">
+            <div class="room-stage" aria-hidden="true">
+              <span class="room-visual-window"></span>
+              <span class="room-visual-moon"></span>
+              <span class="room-visual-curtain left"></span>
+              <span class="room-visual-curtain right"></span>
+              <span class="room-visual-bed"></span>
+              <span class="room-visual-lamp"></span>
+              <img class="stage-group" src="./assets/hero-characters-cutout.png" alt="" />
+              <img class="stage-character stage-cres" src="./assets/characters/cres-character.jpg" alt="" />
+              <img class="stage-character stage-meroa" src="./assets/characters/meroa-character.jpg" alt="" />
+              <img class="stage-character stage-kuyuri" src="./assets/characters/kuyuri-character.png" alt="" />
+              <img class="stage-character stage-furomu" src="./assets/characters/furomu-character.png" alt="" />
+              <img class="stage-character stage-michiru" src="./assets/characters/michiru-character.png" alt="" />
+              <span class="resident-orbit orbit-cres">CRES</span>
+              <span class="resident-orbit orbit-meroa">MEROA</span>
+              <span class="resident-orbit orbit-kuyuri">KUYURI</span>
+              <span class="resident-orbit orbit-furomu">FUROMU</span>
+              <span class="resident-orbit orbit-michiru">MICHIRU</span>
+              <div class="hero-image-copy">
+                <p class="eyebrow">夜の感情診断</p>
+                <h2>あなたが隠している<br />感情は？</h2>
+                <p>月明かりが、感情を形にする。</p>
+                <button class="primary-button image-start-button" type="button" data-start-proxy>
+                  診断をはじめる
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+            <p class="eyebrow">YOUR ROOM AFTER 2AM</p>
+            <p>
+              診断というより、退勤後の夜を一緒にたどる記録です。<br />
+              選んだ答えに近い住人が、その場面ごとに返事をします。
+            </p>
+            <dl>
+              <div><dt>くれす</dt><dd>孤独の化身</dd></div>
+              <div><dt>めろあ</dt><dd>愛情の化身</dd></div>
+              <div><dt>くゆり</dt><dd>後悔の化身</dd></div>
+              <div><dt>ふろむ</dt><dd>恐怖の化身</dd></div>
+              <div><dt>みちる</dt><dd>自由の化身</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="screen quiz" id="quiz" aria-labelledby="question-text">
+        <div class="quiz-room" aria-hidden="true">
+          <span class="quiz-window"></span>
+          <span class="quiz-moon"></span>
+          <span class="quiz-floor"></span>
+          <span class="quiz-door door-left"></span>
+          <span class="quiz-door door-right"></span>
+        </div>
+        <div class="quiz-guide" id="quiz-guide" aria-live="polite">
+          <div class="guide-glow" aria-hidden="true"></div>
+          <img id="guide-image" src="./assets/characters/cres-character.jpg" alt="" />
+          <p id="guide-name">CRES</p>
+          <span id="guide-hint">この夜を案内する住人</span>
+        </div>
+        <div class="quiz-shell">
+          <div class="progress-row">
+            <span id="current-number">01</span>
+            <div
+              class="progress-track"
+              role="progressbar"
+              aria-label="診断の進み具合"
+              aria-valuemin="1"
+              aria-valuemax="10"
+              aria-valuenow="1"
+            >
+              <span id="progress-fill"></span>
+            </div>
+            <span>10</span>
+          </div>
+          <article class="question-card">
+            <p class="question-label">NIGHT LOG <span id="question-roman">I</span></p>
+            <h2 id="question-text"></h2>
+            <div class="answers" id="answers"></div>
+            <div class="encounter-panel" id="encounter-panel" hidden aria-live="polite">
+              <div class="encounter-visual">
+                <img id="encounter-image" alt="" />
+              </div>
+              <div class="encounter-copy">
+                <p class="eyebrow" id="encounter-kicker">A RESIDENT ANSWERED</p>
+                <h3 id="encounter-name"></h3>
+                <p id="choice-echo"></p>
+                <button class="encounter-next" id="encounter-next" type="button">次のシーンへ進む</button>
+              </div>
+            </div>
+          </article>
+          <button class="ghost-button" id="back-button" type="button">← ひとつ前のシーンへ</button>
+        </div>
+      </section>
+
+      <section class="screen interlude" id="interlude" aria-live="polite">
+        <div class="loading-world" aria-hidden="true">
+          <div class="walking-path">
+            <div class="walking-party">
+              <img class="walking-party-body" src="./assets/loading-residents-source.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <h2>住人たちが、夜を歩いています。</h2>
+      </section>
+
+      <section class="screen result" id="result" aria-labelledby="result-emotion">
+        <div class="result-visual" aria-hidden="true">
+          <img class="result-main-art" id="result-main-art" alt="" />
+          <span class="result-shade"></span>
+        </div>
+        <div class="result-shell">
+          <div class="result-title">
+            <p class="eyebrow">YOUR HIDDEN EMOTION IS</p>
+            <p class="result-prefix">あなたの隠している感情は</p>
+            <h2 id="result-emotion">くれす</h2>
+            <p class="result-en" id="result-en">CRES / 孤独</p>
+          </div>
+
+          <div class="result-body">
+            <div class="result-copy">
+              <p class="result-definition" id="result-definition"></p>
+            </div>
+
+            <div class="scene-card" aria-labelledby="scene-title">
+              <p class="eyebrow">FOR EXAMPLE</p>
+              <h3 id="scene-title"></h3>
+              <ul id="scene-list"></ul>
+            </div>
+
+            <p class="result-context" id="result-description"></p>
+
+            <div class="world-card">
+              <div>
+                <span id="emotion-number">003</span>
+                <p>IN LUNAPH WORLD</p>
+              </div>
+              <h3 id="world-name"></h3>
+              <p id="world-line"></p>
+            </div>
+
+            <section class="character-section" aria-labelledby="character-section-title">
+              <p class="eyebrow">YOUR RESIDENT</p>
+              <h3 id="character-section-title">あなたの夜に来た子</h3>
+              <div class="character-layout">
+                <div class="image-frame character-frame" id="character-frame">
+                  <img id="character-image" alt="" />
+                  <span id="character-placeholder"></span>
+                </div>
+                <div>
+                  <p class="character-name" id="character-name"></p>
+                  <p class="character-theme" id="character-theme"></p>
+                </div>
+              </div>
+            </section>
+
+            <section class="outfit-section world-gateway" aria-labelledby="outfit-title">
+              <p class="eyebrow">LUNAPH WORLD</p>
+              <h3 id="outfit-title">この子たちの夜を見に行く</h3>
+              <div class="outfit-card world-gateway-card">
+                <div class="world-orbit" aria-hidden="true"><span>LUNAPH</span></div>
+                <div class="outfit-copy">
+                  <p class="collection-name" id="collection-name"></p>
+                  <p id="collection-line"></p>
+                  <div class="outfit-actions">
+                    <a class="primary-button" id="base-link" href="#" target="_blank" rel="noopener">
+                      Instagramで住人たちを見る
+                      <span aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="share-panel">
+              <button class="secondary-button" id="save-button" type="button">結果画像を保存</button>
+              <button class="secondary-button" id="share-button" type="button">Xで共有</button>
+              <button class="secondary-button" id="line-share-button" type="button">LINEで送る</button>
+            </div>
+            <p class="save-status" id="save-status" aria-live="polite"></p>
+
+            <section class="funnel" aria-labelledby="funnel-title">
+              <p class="eyebrow">NEXT STEP</p>
+              <h3 id="funnel-title">診断の外にも、この子たちはいます。</h3>
+              <div class="support-residents" aria-hidden="true">
+                <span class="support-shion">しおん</span>
+                <img id="support-character-image" alt="" />
+              </div>
+              <p id="support-line">
+                Instagramでは、しおんが夜に出会う住人たちの物語を更新していきます。
+                診断で終わらせず、「私の夜にもいるかも」と思った子の続きを見に来てください。
+              </p>
+              <div class="funnel-actions">
+                <a class="primary-button" id="line-register-link" href="#" target="_blank" rel="noopener">
+                  Instagramで続きを見る
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </section>
+
+            <button class="archive-link" id="emotion-guide-button" type="button">
+              他の感情たちも見てみる
+              <span aria-hidden="true">→</span>
+            </button>
+
+            <button class="ghost-button retry" id="retry-button" type="button">もう一度診断する</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen archive" id="archive" aria-labelledby="archive-title">
+        <div class="archive-shell">
+          <button class="ghost-button" id="archive-back" type="button">← 結果へ戻る</button>
+          <p class="eyebrow">EMOTION ARCHIVE</p>
+          <h2 id="archive-title">夜に生まれる、5つの感情。</h2>
+          <div class="emotion-grid" id="emotion-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© LUNAPH</span>
+      <span>本当の自分を隠さなくていい夜を彩る感情IPブランド</span>
+    </footer>
+
+    <canvas id="share-canvas" width="1080" height="1350" hidden></canvas>
+    <div class="image-modal" id="image-modal" hidden>
+      <div class="modal-backdrop" data-close-image></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="image-modal-title">
+        <button class="modal-close" type="button" data-close-image aria-label="閉じる">×</button>
+        <p class="eyebrow">RESULT IMAGE</p>
+        <h2 id="image-modal-title">結果画像</h2>
+        <img id="result-image-preview" alt="LUNAPH診断結果画像" />
+        <a class="primary-button image-download" id="image-download" href="#" download>
+          画像を保存
+          <span aria-hidden="true">→</span>
+        </a>
+        <p class="modal-note">iPhoneでは画像を長押しして「写真に保存」を選んでください。</p>
+      </div>
+    </div>
+
+    <script src="./art-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
