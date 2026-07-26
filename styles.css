@@ -5315,3 +5315,8 @@ body[class*="result-"] #share-button {
   border-color: color-mix(in srgb, var(--accent) 42%, rgba(255,255,255,0.18)) !important;
   color: color-mix(in srgb, var(--accent) 52%, #ffffff) !important;
 }
+
+/* Hide quiz guide characters so question text stays readable. */
+.quiz-guide {
+  display: none !important;
+}
