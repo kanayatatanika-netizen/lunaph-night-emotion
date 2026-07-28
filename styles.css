@@ -5320,3 +5320,28 @@ body[class*="result-"] #share-button {
 .quiz-guide {
   display: none !important;
 }
+
+/* Keep result content centered on wide screens and mobile screenshots. */
+body[class*="result-"] .result-shell {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+body[class*="result-"] .result-title,
+body[class*="result-"] .character-section {
+  text-align: center !important;
+}
+
+body[class*="result-"] .result-title h2,
+body[class*="result-"] .result-prefix,
+body[class*="result-"] .result-en {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  text-align: center !important;
+}
+
+body[class*="result-"] .character-frame {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  width: min(100%, 540px) !important;
+}
