@@ -250,24 +250,24 @@ const resultViewCopy = {
 
 const supportMessages = {
   affection: {
-    title: "しおんから、愛情を抱えているあなたへ",
-    line: "大丈夫。接客中に生まれた優しさが、全部ただの営業じゃなく感じる夜があってもいい。君の愛情は、誰かをちゃんと大切に見られる力だから。",
+    title: "神客から、愛情を抱えているあなたへ",
+    line: "大丈夫。ちゃんと大切にしようとしてくれてたの、伝わってるよ。営業だからって全部軽いわけじゃないし、優しくした自分まで否定しなくていい。君の愛情は、ちゃんと人を見ている証拠だよ。",
   },
   fear: {
-    title: "しおんから、恐怖を抱えているあなたへ",
-    line: "大丈夫。空気を読みすぎる君は弱いんじゃない。ちゃんと場を見てきたから、不安まで先に拾ってしまうだけ。ふろむは、その警戒心ごと君を守っているよ。",
+    title: "神客から、恐怖を抱えているあなたへ",
+    line: "大丈夫。空気を読みすぎてるんじゃなくて、ちゃんと卓を見てくれてたんだよね。少しの沈黙で焦る日があっても、君が弱いわけじゃない。怖くても笑ってくれたこと、ちゃんと届いてるよ。",
   },
   solitude: {
-    title: "しおんから、孤独を抱えているあなたへ",
-    line: "大丈夫。接客でたくさん話したあとに寂しくなるのは、おかしくない。明るくしていた時間のぶん、夜に本音が戻ってきただけ。そんな君でも、ちゃんとここにいていいよ。",
+    title: "神客から、孤独を抱えているあなたへ",
+    line: "大丈夫。卓では明るくしてたのに、心だけ置いていかれる日もあるよね。誰かと話してるのに孤独になるのは、君が変なんじゃない。本音まで見せられる場所が少なかっただけだよ。",
   },
   freedom: {
-    title: "しおんから、自由を抱えているあなたへ",
-    line: "大丈夫。誰か用の自分を脱ぎたくなる夜があっても、それは冷たいわけじゃない。ちゃんと合わせてきたぶん、君自身に戻る時間が必要なだけ。少しずつ、君の呼吸に戻っていいよ。",
+    title: "神客から、自由を抱えているあなたへ",
+    line: "大丈夫。求められるキャラを頑張ったぶん、全部脱ぎたくなる時もあるよね。それは冷たいわけじゃない。合わせられる君もすごいし、誰か用じゃない君に戻りたい気持ちもちゃんと大事だよ。",
   },
   regret: {
-    title: "しおんから、後悔を抱えているあなたへ",
-    line: "大丈夫。終わった会話を何度も思い出す君は、だめな人じゃない。言葉を大切にしているから、あとから直したくなるだけ。過去の君を責め続けなくても、今の君はここから変われるよ。",
+    title: "神客から、後悔を抱えているあなたへ",
+    line: "大丈夫。終わった卓を何回も思い出すのは、雑に接客してない証拠だよ。あの返し、もっと可愛くできたかもって考える君は、ちゃんと向き合ってた。今日の君を責めすぎなくていいよ。",
   },
 };
 
@@ -301,98 +301,98 @@ const questionGuides = [
 
 questions.splice(0, questions.length, ...[
   {
-    scene: "SCENE 01 / 出勤して最初の卓。笑顔を作って、空気を読む。",
-    text: "最初の卓で、裏で一番走ってる思考は？",
+    scene: "SCENE 01 / オープン直後。最初のお客さんが席についた。",
+    text: "最初の卓、心の中で一番出やすい本音は？",
     answers: [
-      ["今の反応薄くない？って表情を拾いにいく", "fear", ""],
-      ["盛り上げながら、自分の本音だけは奥にしまう", "solitude", ""],
-      ["さっきの返し、もう一段うまく言えたかもと思う", "regret", ""],
-      ["どうしたら今日いちばん楽しかったって思ってもらえるか考える", "affection", ""],
+      ["今日の空気、こっちで作れるかなって先に不安になる", "fear", ""],
+      ["明るく話しながら、自分の素は奥にしまう", "solitude", ""],
+      ["第一声、もっと可愛く入れたかもってすぐ反省する", "regret", ""],
+      ["来てくれたなら、ちゃんと楽しい時間にしたいと思う", "affection", ""],
     ],
   },
   {
-    scene: "SCENE 02 / 卓が盛り上がったあと。席を離れて、少しだけ息をつく。",
-    text: "席を離れた瞬間、脳内で始まるのは？",
+    scene: "SCENE 02 / 卓で一瞬だけ沈黙。相手がスマホを見た。",
+    text: "卓が一瞬静かになった時、心の中は？",
     answers: [
-      ["ちゃんと刺さってた？退屈させてない？の確認作業", "fear", ""],
-      ["急に音が消えて、自分だけ置いていかれた感じ", "solitude", ""],
-      ["あの一言、いらなかった説を勝手に検証する", "regret", ""],
-      ["楽しかったって言葉を、ちょっとだけ本気で信じたい", "affection", ""],
+      ["退屈させた？何かミスった？って一気に焦る", "fear", ""],
+      ["会話してるのに、急に自分だけ遠くにいる感じがする", "solitude", ""],
+      ["さっきの話題、変えた方がよかったかもって思う", "regret", ""],
+      ["もう一回笑ってほしくて、話題を探す", "affection", ""],
     ],
   },
   {
-    scene: "SCENE 03 / DMやリプを返す時間。画面の向こうにも自分がいる。",
-    text: "DMを返す時、裏でやってることは？",
+    scene: "SCENE 03 / 推しって言われた。嬉しいけど、営業中だから顔は崩せない。",
+    text: "推しって言われた瞬間、内側では？",
     answers: [
-      ["絵文字ひとつで温度ミスらないか見直す", "fear", ""],
-      ["明るく返すけど、踏み込まれすぎない距離を作る", "solitude", ""],
-      ["送信後にもう一回開いて、文章の事故を探す", "regret", ""],
-      ["相手が喜びそうな言葉をちゃんと選んでしまう", "affection", ""],
+      ["本気？ノリ？どこまで信じていい？って探る", "fear", ""],
+      ["嬉しいのに、どうせ一瞬かもって距離を置く", "solitude", ""],
+      ["もっと上手く喜べばよかったって後から思う", "regret", ""],
+      ["正直ちゃんと嬉しい。大事にしたくなる", "affection", ""],
     ],
   },
   {
-    scene: "SCENE 04 / 褒められたあと。嬉しいのに、少し信じきれない。",
-    text: "褒められた瞬間、心の中の第一声は？",
+    scene: "SCENE 04 / チェキを撮る時間。かわいく残りたいし、事故りたくない。",
+    text: "チェキ前、いちばん強い感情は？",
     answers: [
-      ["本気？お世辞？どっち？って疑う", "fear", ""],
-      ["嬉しいのに、どこか自分の話じゃないみたいに聞こえる", "solitude", ""],
-      ["今の返し可愛くなかった、やり直したい", "regret", ""],
-      ["その言葉、今日のメンタルのお守りにしたい", "affection", ""],
+      ["盛れなかったらどうしようって内心かなり怖い", "fear", ""],
+      ["写真の中では笑うけど、見られるほど孤独になる", "solitude", ""],
+      ["ポーズも表情も、あとで絶対反省すると思う", "regret", ""],
+      ["その一枚を大事にしてくれたら嬉しい", "affection", ""],
     ],
   },
   {
-    scene: "SCENE 05 / 退勤前。今日の会話と通知が頭に残っている。",
-    text: "退勤前、スマホで一番チェックする地雷は？",
+    scene: "SCENE 05 / ドリンクを入れてもらえた。ありがとうは言えるけど、本音は別にある。",
+    text: "ドリンクをもらった時、近い本音は？",
     answers: [
-      ["未返信、既読、予定抜け。燃える前に潰したい", "fear", ""],
-      ["今日の自分、ちゃんと人間として残ってるか確認する", "solitude", ""],
-      ["会話のミスっぽい場所を勝手に掘り返す", "regret", ""],
-      ["嬉しかった言葉をもう一回見て、少し回復する", "affection", ""],
+      ["ちゃんと返せてる？お礼薄くない？って気になる", "fear", ""],
+      ["嬉しいけど、結局ここでしか必要とされないのかなと思う", "solitude", ""],
+      ["もっと可愛く喜べばよかったってすぐ思う", "regret", ""],
+      ["素直に嬉しい。大切にされてる気がして少し救われる", "affection", ""],
     ],
   },
   {
-    scene: "SCENE 06 / 退勤後の帰り道。スマホの光だけが近い。",
-    text: "帰り道、急に襲ってくるやつは？",
+    scene: "SCENE 06 / 他の子の卓が盛り上がっている。自分の席からそれが見えた。",
+    text: "他の卓が盛り上がってる時、心の中は？",
     answers: [
-      ["明日もこのテンション作れる？という不安", "fear", ""],
-      ["あれだけ話したのに、急に誰とも繋がってない感じ", "solitude", ""],
-      ["終わった会話を今さら編集したくなる衝動", "regret", ""],
-      ["誰かの一言を、まだ胸の中で温めている感じ", "affection", ""],
+      ["自分の卓、負けてない？って焦る", "fear", ""],
+      ["店内にいるのに、自分だけ透明になった感じがする", "solitude", ""],
+      ["自分の接客、もっとできたはずって比べてしまう", "regret", ""],
+      ["楽しそうでいいなと思いつつ、自分も誰かに選ばれたい", "affection", ""],
     ],
   },
   {
-    scene: "SCENE 07 / 家に着いた。外用の自分を脱いで、部屋着になる。",
-    text: "外用の自分を脱いだら、何が残る？",
+    scene: "SCENE 07 / 指名や予約の話が出た。期待したいけど、期待しすぎたくない。",
+    text: "また来るねって言われた時、内側では？",
     answers: [
-      ["何か来てないかスマホを見て、何もなくてまた見る", "fear", ""],
-      ["静かで落ち着くのに、急に取り残された感じ", "solitude", ""],
-      ["今日の自分に勝手に点数をつけ始める", "regret", ""],
-      ["誰かに『今日がんばったね』って言われたい", "affection", ""],
+      ["本当に来る？社交辞令？って先に疑う", "fear", ""],
+      ["嬉しいのに、信じたら傷つきそうで距離を置く", "solitude", ""],
+      ["もっと次に繋がる返しができたかもって考える", "regret", ""],
+      ["信じたい。次も会えるなら普通に嬉しい", "affection", ""],
     ],
   },
   {
-    scene: "SCENE 08 / お風呂。メイクも声のトーンも、少しずつ落ちる。",
-    text: "メイクを落としながら、何が蘇る？",
+    scene: "SCENE 08 / 忙しい時間。呼ばれて、戻って、また別の卓へ行く。",
+    text: "忙しい営業中、心の奥で出るものは？",
     answers: [
-      ["一瞬だけ卓の空気が冷えた気がした場面", "fear", ""],
-      ["鏡に映る、誰にも見せてない素の顔", "solitude", ""],
-      ["あの返し、別ルートなら勝てたかもという後悔", "regret", ""],
-      ["今日優しくできた相手の顔や言葉", "affection", ""],
+      ["全部ちゃんと回せてる？抜けてない？って怖くなる", "fear", ""],
+      ["誰と話してても、自分の本音だけ置き去りになる", "solitude", ""],
+      ["さっきの卓、もっと丁寧にできたかもって引っかかる", "regret", ""],
+      ["忙しくても、ちゃんと一人ずつ大切にしたい", "affection", ""],
     ],
   },
   {
-    scene: "SCENE 09 / ベッドの上。通知を見て、見ないふりをする。",
-    text: "寝る前、スマホ握ったまま何に負けてる？",
+    scene: "SCENE 09 / ラストオーダー前。今日の営業が終わりに近づいている。",
+    text: "終盤の卓で、隠しがちな感情は？",
     answers: [
-      ["返信の温度と既読のタイミングに負ける", "fear", ""],
-      ["賑やかだったぶん、部屋の静けさに負ける", "solitude", ""],
-      ["自分だけ閉店してない反省会に負ける", "regret", ""],
-      ["大切にされたかった気持ちに負ける", "affection", ""],
+      ["最後に失敗したくなくて、空気を読みすぎる", "fear", ""],
+      ["笑ってるのに、今日は誰にも本音言ってないなと思う", "solitude", ""],
+      ["今日の点数を勝手につけて、足りない所を探す", "regret", ""],
+      ["帰る前に、少しでも覚えていてほしいと思う", "affection", ""],
     ],
   },
   {
-    scene: "SCENE 10 / 朝になる直前。今日の接客で残った感情をひとつ選ぶ。",
-    text: "今日の営業スマイルの裏にいたのは？",
+    scene: "SCENE 10 / 営業中のあなた。笑顔の下で、一番長くいた感情を選ぶ。",
+    text: "今日の場内で、あなたが一番隠していた感情は？",
     answers: [
       ["嫌われたくないから先回りする恐怖", "fear", ""],
       ["人の中にいても消えない孤独", "solitude", ""],
@@ -603,7 +603,7 @@ function renderResult(key) {
   document.documentElement.style.setProperty("--accent", emotion.accent[1]);
   elements.resultEmotion.textContent = view.emotion;
   elements.resultEn.textContent = `PARTNER / ${view.partner}`;
-  elements.resultDefinition.textContent = `営業スマイルの裏にいた感情は「${view.emotion}」でした。`;
+  elements.resultDefinition.textContent = `営業中、あなたが隠していた感情は「${view.emotion}」でした。`;
   elements.resultDescription.textContent = support.line;
   if (elements.resultMainArt) {
     elements.resultMainArt.src = emotion.resultImage || emotion.characterImage;
@@ -625,7 +625,7 @@ function renderResult(key) {
   elements.characterTheme.textContent = support.line;
   elements.collectionName.textContent = `${emotion.worldName}の夜`;
   elements.collectionLine.textContent =
-    `${emotion.worldName}は、LUNAPHの世界で「${emotion.emotionLabel}」から生まれる住人です。Instagramでは、しおんがその感情と一緒に過ごす夜の物語を見られます。`;
+    `${emotion.worldName}は、LUNAPHの世界で「${emotion.emotionLabel}」から生まれる住人です。Instagramでは、営業中に隠した感情が姿を持つ夜の物語を見られます。`;
   elements.baseLink.href = INSTAGRAM_URL;
   const funnelTitle = document.querySelector("#funnel-title");
   const supportLine = document.querySelector("#support-line") || document.querySelector(".funnel p:not(.eyebrow)");
@@ -686,7 +686,7 @@ function goBack() {
 function shareOnX() {
   const view = resultViewCopy[resultKey];
   const activeScenes = resultDepth === "deep" ? view.deep : view.light;
-  const text = `営業スマイルの裏にいた感情は「${view.emotion}」でした。\nパートナーは${view.partner}。\n${activeScenes[0]}\n\n#LUNAPH #営業スマイルの裏診断`;
+  const text = `営業中、私が隠していた感情は「${view.emotion}」でした。\nパートナーは${view.partner}。\n${activeScenes[0]}\n\n#LUNAPH #営業中の隠し感情診断`;
   const url = window.location.protocol.startsWith("http") ? window.location.href : "";
   const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
   window.open(shareUrl, "_blank", "noopener,noreferrer,width=650,height=520");
@@ -741,7 +741,7 @@ function drawShareImage() {
   context.fillText("LUNAPH", 92, 138);
   context.fillStyle = "#c5acd9";
   context.font = "21px serif";
-  context.fillText("営業スマイルの裏にいた感情が、夜に姿を持つ。", 92, 308);
+  context.fillText("営業中に隠した感情が、夜に姿を持つ。", 92, 308);
 
   context.fillStyle = "#f7f3ff";
   context.font = "300 118px 'Yu Mincho', serif";
@@ -761,7 +761,7 @@ function drawShareImage() {
   wrapCanvasText(context, resultCopy, 92, 1000, 850, 40);
   context.fillStyle = "#90889d";
   context.font = "17px Arial";
-  context.fillText("#LUNAPH  #営業スマイルの裏診断", 92, 1220);
+  context.fillText("#LUNAPH  #営業中の隠し感情診断", 92, 1220);
   return canvas;
 }
 
