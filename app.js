@@ -273,7 +273,7 @@ const supportMessages = {
 
 const romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
 const answerLetters = ["A", "B", "C", "D"];
-const tiePriority = ["solitude", "fear", "affection", "regret", "freedom"];
+const emotionKeys = ["affection", "fear", "solitude", "freedom", "regret"];
 const questionMoods = [
   "street",
   "mirror",
@@ -307,14 +307,14 @@ questions.splice(0, questions.length, ...[
       ["相手の話す速度やテンションに合わせる", "fear", ""],
       ["まず名前や好きなものを覚える", "affection", ""],
       ["自分のキャラが伝わる話題を出す", "freedom", ""],
-      ["次に来た時も話せる内容を拾う", "regret", ""],
+      ["自分の話は出しすぎず、相手の温度を見る", "solitude", ""],
     ],
   },
   {
     scene: "SCENE 02 / お茶。店内は動いているのに、自分の前だけ静か。",
     text: "お茶の時間、どう動く？",
     answers: [
-      ["SNSや遠隔の反応を確認する", "fear", ""],
+      ["来てくれた人へのお礼を先に考える", "affection", ""],
       ["バックヤードで気持ちを整える", "solitude", ""],
       ["メイクや髪を直して気分を切り替える", "freedom", ""],
       ["さっきの卓で拾った会話をメモする", "regret", ""],
@@ -326,7 +326,7 @@ questions.splice(0, questions.length, ...[
     answers: [
       ["軽く受けつつ、次も来やすい空気を作る", "fear", ""],
       ["ちゃんと喜んで、相手にも伝わるように返す", "affection", ""],
-      ["冗談っぽく返して、自分のペースを崩さない", "freedom", ""],
+      ["自分の気持ちは出しすぎず、相手の言葉を受け止める", "solitude", ""],
       ["あとで使えるように、その言葉を覚えておく", "regret", ""],
     ],
   },
@@ -334,7 +334,7 @@ questions.splice(0, questions.length, ...[
     scene: "SCENE 04 / チェキ。盛れたいし、ポーズ事故もしたくない。",
     text: "チェキ前、まず考えることは？",
     answers: [
-      ["写りと表情を確認してから撮る", "fear", ""],
+      ["無理に盛り上げず、自然な表情で撮る", "solitude", ""],
       ["相手が喜ぶポーズを提案する", "affection", ""],
       ["自分らしいポーズで印象を残す", "freedom", ""],
       ["次回も話題にできる一枚にする", "regret", ""],
@@ -347,7 +347,7 @@ questions.splice(0, questions.length, ...[
       ["周りにも伝わるように、しっかり盛り上げる", "fear", ""],
       ["相手に向けて、ちゃんとお礼を伝える", "affection", ""],
       ["写真や動画で、自分らしく残す", "freedom", ""],
-      ["後で投稿やお礼文に使える言葉を考える", "regret", ""],
+      ["写真より、その場の空気をちゃんと覚えておく", "solitude", ""],
     ],
   },
   {
@@ -366,7 +366,7 @@ questions.splice(0, questions.length, ...[
     answers: [
       ["日程や予定を自然に確認する", "fear", ""],
       ["素直に喜んで、次も楽しみにしてると伝える", "affection", ""],
-      ["軽く返して、期待しすぎない距離を保つ", "freedom", ""],
+      ["軽く返して、期待しすぎない距離を保つ", "solitude", ""],
       ["次に話す内容まで考えておく", "regret", ""],
     ],
   },
@@ -582,9 +582,12 @@ function calculateResult() {
     scores[emotion] += 1;
   });
 
-  resultKey = tiePriority.reduce((best, key) => {
-    return scores[key] > scores[best] ? key : best;
-  }, tiePriority[0]);
+  const highestScore = Math.max(...emotionKeys.map((key) => scores[key]));
+  const tiedResults = emotionKeys.filter((key) => scores[key] === highestScore);
+  const tieSeed = responses.reduce((seed, emotion, index) => {
+    return seed + emotionKeys.indexOf(emotion) * (index + 3);
+  }, responses.length);
+  resultKey = tiedResults[tieSeed % tiedResults.length];
   resultDepth = scores[resultKey] >= 4 ? "deep" : "light";
 
   showScreen("interlude");
