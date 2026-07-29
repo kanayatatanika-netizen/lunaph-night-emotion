@@ -1,4 +1,5 @@
 const INSTAGRAM_URL = "https://www.instagram.com/lunaph29.5?igsh=bmwzczh0ajZjbmxy&utm_source=qr";
+const SHARE_URL = "https://x.gd/CEkf1";
 
 const emotions = {
   affection: {
@@ -695,17 +696,15 @@ function shareOnX() {
   const view = resultViewCopy[resultKey];
   const activeScenes = resultDepth === "deep" ? view.deep : view.light;
   const text = `営業中の裏感情診断、私は「${view.typeName}」でした。\n${activeScenes[0]}\n\n#LUNAPH #営業中の裏感情診断`;
-  const url = window.location.protocol.startsWith("http") ? window.location.href : "";
-  const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+  const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(SHARE_URL)}`;
   window.open(shareUrl, "_blank", "noopener,noreferrer,width=650,height=520");
 }
 
 function shareOnLine() {
   const emotion = emotions[resultKey];
   const text = `私の夜に現れた住人は「${emotion.name}」でした。${emotion.shareLine}`;
-  const url = window.location.protocol.startsWith("http") ? window.location.href : "";
   window.open(
-    `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`,
+    `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(SHARE_URL)}&text=${encodeURIComponent(text)}`,
     "_blank",
     "noopener,noreferrer",
   );
