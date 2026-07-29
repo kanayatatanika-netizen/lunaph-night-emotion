@@ -174,75 +174,80 @@ const resultViewCopy = {
   affection: {
     emotion: "愛情",
     partner: "めろあ",
+    typeName: "好きが接客に漏れるめろあ派",
     light: [
-      "初回卓でも、名前と話した内容をちゃんと覚えて帰したい。",
-      "チェキやシャンパンは売上だけじゃなくて、今日の自分を認めてもらえた感じがする。",
-      "また来るねと言われたら、営業中の顔をしながら普通にうれしい。",
+      "初回卓の名前と好きなもの、普通に次の出勤まで覚えてる。",
+      "チェキの落書きが業務じゃなくて、ほぼ小さい手紙になる。",
+      "『また来るね』を営業トークとして処理したいのに、ちゃんとうれしい。",
     ],
     deep: [
-      "全員に同じ温度で接したいのに、優しくしたい人がいると顔に出そうで焦る。",
-      "予約が入ると売上より先に『ちゃんと楽しませたい』が出てくる。",
-      "営業中に大切にした気持ちを、営業だからで片付けきれない。",
+      "全員に同じ温度で接するつもりが、好きな卓だけ目が勝手に甘くなる。",
+      "売上より先に『今日ちゃんと楽しませられたかな』で反省会が始まる。",
+      "営業だからで片付けたいのに、優しくされた記憶だけ閉店後も普通に居座る。",
     ],
     support: "人を大切にしようとする接客は、重いんじゃなくて強みです。売上や数字だけじゃなく、相手の時間を良くしたいと思えるところがあなたの魅力です。",
   },
   fear: {
     emotion: "恐怖",
     partner: "ふろむ",
+    typeName: "空気を読みすぎるふろむ派",
     light: [
-      "卓が静かになると、話題を変えるか待つかを秒で考える。",
-      "シャンパンをもらった瞬間も、喜び方が足りてるか確認してしまう。",
-      "初回卓では盛り上げるより先に、相手が嫌がるラインを探している。",
+      "卓が2秒静かになるだけで、話題を変えるか待つか脳内会議が始まる。",
+      "シャンパンをもらった瞬間も、喜び方が足りてるか自分で採点してる。",
+      "初回卓では盛り上げる前に、相手の地雷ラインを先に探してる。",
     ],
     deep: [
-      "場内が静かになっただけで、今日の接客を全部見直し始める。",
-      "相手の返事が短いだけで、言い方・表情・話題を一気に点検する。",
-      "笑顔で話しながら、頭の中では常に失敗パターンを先回りして潰している。",
+      "相手の返事が『うん』だけで、言い方・表情・席の空気を全部巻き戻す。",
+      "場内が静かになっただけで、自分の接客ミス説を勝手に立ち上げる。",
+      "笑顔で話してるのに、頭の中だけ避難訓練レベルで最悪パターンを潰してる。",
     ],
     support: "空気を読む力が強い人ほど、先に不安まで拾います。それは弱さではなく、場内を壊さないための観察力です。使いすぎた日だけ、自分を責めないでください。",
   },
   solitude: {
     emotion: "孤独",
     partner: "くれす",
+    typeName: "満卓でもひとりになるくれす派",
     light: [
-      "満卓で話していても、自分の話はほとんどしていない日がある。",
-      "場内では笑えているのに、誰にも本音を出していないことに気づく。",
-      "隣の卓が盛り上がっていても、比べるより先に自分の席を守ろうとする。",
+      "ずっと話してたのに、自分のことは一個も話してない日がある。",
+      "場内では笑えるのに、退勤した瞬間『今日の私はどこ？』になる。",
+      "満卓でも、見られてるのは接客中の自分だけだと思う時がある。",
     ],
     deep: [
-      "ずっと話していたのに、営業が終わる頃には自分の本音だけ一回も出していない。",
-      "楽しかったと言われても、見られていたのは接客中の自分だけだと思う時がある。",
-      "必要とされているのに、素の自分はどこにも出していない感覚が残る。",
+      "一日中誰かと話したのに、帰り道で急に誰にも会ってない気分になる。",
+      "『楽しかった』と言われても、褒められたのは作った自分だけだと思ってしまう。",
+      "必要とされてるのに、素の自分だけ店内に出勤してなかった感覚が残る。",
     ],
     support: "たくさん話したのに孤独が残るのは、会話量の問題ではありません。本音を出せなかった日ほど、あとから静かに疲れます。あなたが薄いわけではありません。",
   },
   freedom: {
     emotion: "自由",
     partner: "みちる",
+    typeName: "キャラ固定されたくないみちる派",
     light: [
-      "求められるキャラは出せるけど、今日は違う見せ方もしたいと思う。",
-      "予約、DM、出勤投稿をこなしながら、自分のペースも守りたい。",
-      "初回卓用、常連用、SNS用で切り替えるのは得意だけど、固定されたくない。",
+      "求められるキャラはできる。でも毎回それで呼ばれると少し飽きる。",
+      "初回卓用、常連用、SNS用で切り替えられるけど、固定はされたくない。",
+      "予約もDMもありがたい。でも自分のペースまで全部渡す気はない。",
     ],
     deep: [
-      "店用、SNS用、初回卓用で切り替えすぎて、本当はどれも自分なのか分からなくなる。",
-      "かわいい、面白い、聞き上手を全部求められると、一回全部外したくなる。",
-      "予定や通知はありがたいのに、誰にも決められない時間がないと続かない。",
+      "『こういう子でいてほしい』が増えるほど、全部逆のことをしたくなる。",
+      "かわいい・面白い・聞き上手を全部求められて、一回プロフィールごと消したくなる。",
+      "予定も通知もありがたいのに、誰にも決められない時間がないと普通に無理。",
     ],
     support: "キャラを変えたい、距離を取りたい、自分のペースを守りたい。それは冷たさではありません。長く続けるために、自分の輪郭を残そうとしているだけです。",
   },
   regret: {
     emotion: "後悔",
     partner: "くゆり",
+    typeName: "退勤後に脳内反省会するくゆり派",
     light: [
-      "チェキのポーズ、会話の返し、シャンパンのお礼をあとから見直したくなる。",
-      "相手は忘れていそうな一言を、自分だけ細かく覚えている。",
-      "初回卓の第一声を、閉店後まで思い出している。",
+      "チェキのポーズも返しも、お礼文も、あとから一回は見直す。",
+      "相手は忘れてそうな一言を、自分だけやたら正確に覚えてる。",
+      "初回卓の第一声を、閉店後にもう一回だけやり直したくなる。",
     ],
     deep: [
-      "終わった卓を何度も思い出して、毎回違う返しを選び直している。",
-      "相手はもう帰っているのに、自分だけ接客の反省会を続けている。",
-      "もっと可愛く返せた、もっと拾えた、もっと次につなげられたが止まらない。",
+      "終わった卓を脳内で再演して、毎回違う返しを選び直してる。",
+      "相手は帰って寝てるのに、自分だけ深夜の接客裁判を開廷してる。",
+      "もっと可愛く返せた、もっと拾えた、もっと次につなげられた、が朝まで止まらない。",
     ],
     support: "終わった会話を見直すのは、雑にやっていない証拠です。反省できる人は伸びます。ただ、全部を自分のせいにしなくて大丈夫です。",
   },
@@ -606,14 +611,14 @@ function renderResult(key) {
   document.documentElement.style.setProperty("--accent", emotion.accent[1]);
   elements.resultEmotion.textContent = view.emotion;
   elements.resultEn.textContent = `PARTNER / ${view.partner}`;
-  elements.resultDefinition.textContent = `営業中、あなたが隠していた感情は「${view.emotion}」でした。`;
+  elements.resultDefinition.textContent = `あなたは「${view.typeName}」。`;
   elements.resultDescription.textContent = support.line;
   if (elements.resultMainArt) {
     elements.resultMainArt.src = emotion.resultImage || emotion.characterImage;
     elements.resultMainArt.alt = "";
   }
   const activeScenes = resultDepth === "deep" ? view.deep : view.light;
-  elements.sceneTitle.textContent = `${resultDepth === "deep" ? "重度" : "軽度"}の${view.emotion}あるある`;
+  elements.sceneTitle.textContent = `${resultDepth === "deep" ? "重度" : "軽度"}の${view.typeName}あるある`;
   elements.sceneList.innerHTML = activeScenes.map((scene) => `<li>${scene}</li>`).join("");
   elements.emotionNumber.textContent = emotion.order;
   elements.worldName.textContent = `あなたのパートナーは、${view.partner}`;
@@ -689,7 +694,7 @@ function goBack() {
 function shareOnX() {
   const view = resultViewCopy[resultKey];
   const activeScenes = resultDepth === "deep" ? view.deep : view.light;
-  const text = `営業中、私が隠していた感情は「${view.emotion}」でした。\nパートナーは${view.partner}。\n${activeScenes[0]}\n\n#LUNAPH #営業中の隠し感情診断`;
+  const text = `営業中の裏感情診断、私は「${view.typeName}」でした。\n${activeScenes[0]}\n\n#LUNAPH #営業中の裏感情診断`;
   const url = window.location.protocol.startsWith("http") ? window.location.href : "";
   const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
   window.open(shareUrl, "_blank", "noopener,noreferrer,width=650,height=520");
@@ -744,7 +749,7 @@ function drawShareImage() {
   context.fillText("LUNAPH", 92, 138);
   context.fillStyle = "#c5acd9";
   context.font = "21px serif";
-  context.fillText("営業中に隠した感情が、夜に姿を持つ。", 92, 308);
+  context.fillText("営業中の裏感情が、夜に姿を持つ。", 92, 308);
 
   context.fillStyle = "#f7f3ff";
   context.font = "300 118px 'Yu Mincho', serif";
@@ -755,7 +760,7 @@ function drawShareImage() {
 
   context.fillStyle = "#eee9f4";
   context.font = "31px 'Yu Mincho', serif";
-  wrapCanvasText(context, `あなたのパートナーは、${view.partner}`, 92, 700, 860, 52);
+  wrapCanvasText(context, `あなたは、${view.typeName}`, 92, 700, 860, 52);
   context.fillStyle = "#d6d0df";
   context.font = "25px 'Yu Mincho', serif";
   wrapCanvasText(context, activeScenes[0], 92, 845, 850, 46);
@@ -764,7 +769,7 @@ function drawShareImage() {
   wrapCanvasText(context, resultCopy, 92, 1000, 850, 40);
   context.fillStyle = "#90889d";
   context.font = "17px Arial";
-  context.fillText("#LUNAPH  #営業中の隠し感情診断", 92, 1220);
+  context.fillText("#LUNAPH  #営業中の裏感情診断", 92, 1220);
   return canvas;
 }
 
