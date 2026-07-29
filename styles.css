@@ -2818,16 +2818,16 @@ body {
   content: "";
 }
 
-body[data-question-mood="street"] { --mood-image: url("./assets/characters/furomu-character.png"); --mood-glow: rgba(118, 104, 218, 0.28); }
-body[data-question-mood="mirror"] { --mood-image: url("./assets/characters/cres-character.jpg"); --mood-glow: rgba(196, 184, 255, 0.28); }
-body[data-question-mood="phone"] { --mood-image: url("./assets/characters/meroa-character.jpg"); --mood-glow: rgba(236, 150, 188, 0.26); }
-body[data-question-mood="draft"] { --mood-image: url("./assets/characters/kuyuri-character.png"); --mood-glow: rgba(173, 188, 255, 0.24); }
-body[data-question-mood="closet"] { --mood-image: url("./assets/characters/michiru-character.png"); --mood-glow: rgba(255, 216, 116, 0.22); }
-body[data-question-mood="bed"] { --mood-image: url("./assets/characters/cres-character.jpg"); --mood-glow: rgba(192, 181, 255, 0.3); }
-body[data-question-mood="bath"] { --mood-image: url("./assets/characters/kuyuri-character.png"); --mood-glow: rgba(184, 198, 255, 0.26); }
-body[data-question-mood="window"] { --mood-image: url("./assets/characters/michiru-character.png"); --mood-glow: rgba(255, 218, 118, 0.25); }
-body[data-question-mood="ceiling"] { --mood-image: url("./assets/characters/furomu-character.png"); --mood-glow: rgba(123, 108, 224, 0.32); }
-body[data-question-mood="dawn"] { --mood-image: url("./assets/characters/meroa-character.jpg"); --mood-glow: rgba(246, 172, 204, 0.26); }
+body[data-question-mood="street"] { --mood-image: url("./assets/characters/furomu-character.png"); --mood-glow: rgba(10, 9, 14, 0.52); }
+body[data-question-mood="mirror"] { --mood-image: url("./assets/characters/cres-character.jpg"); --mood-glow: rgba(255, 255, 255, 0.38); }
+body[data-question-mood="phone"] { --mood-image: url("./assets/characters/meroa-character.jpg"); --mood-glow: rgba(255, 143, 195, 0.38); }
+body[data-question-mood="draft"] { --mood-image: url("./assets/characters/kuyuri-character.png"); --mood-glow: rgba(132, 220, 255, 0.36); }
+body[data-question-mood="closet"] { --mood-image: url("./assets/characters/michiru-character.png"); --mood-glow: rgba(255, 212, 52, 0.34); }
+body[data-question-mood="bed"] { --mood-image: url("./assets/characters/cres-character.jpg"); --mood-glow: rgba(255, 255, 255, 0.44); }
+body[data-question-mood="bath"] { --mood-image: url("./assets/characters/kuyuri-character.png"); --mood-glow: rgba(132, 220, 255, 0.4); }
+body[data-question-mood="window"] { --mood-image: url("./assets/characters/michiru-character.png"); --mood-glow: rgba(255, 212, 52, 0.42); }
+body[data-question-mood="ceiling"] { --mood-image: url("./assets/characters/furomu-character.png"); --mood-glow: rgba(0, 0, 0, 0.62); }
+body[data-question-mood="dawn"] { --mood-image: url("./assets/characters/meroa-character.jpg"); --mood-glow: rgba(255, 143, 195, 0.44); }
 
 .quiz-shell {
   position: relative;
@@ -4090,56 +4090,58 @@ body[data-question-phase="deep"].is-door-opening .quiz-shell {
 
 /* Question color logic: first half is a faint sign, second half is entering the resident's room */
 body[data-guide="fear"] {
-  --resident-rgb: 42, 36, 64;
-  --resident-soft: rgba(42, 36, 64, 0.18);
-  --resident-mid: rgba(42, 36, 64, 0.34);
-  --resident-strong: rgba(19, 16, 28, 0.72);
-  --resident-line: rgba(132, 119, 190, 0.34);
+  --resident-rgb: 10, 9, 14;
+  --resident-soft: rgba(12, 10, 18, 0.36);
+  --resident-mid: rgba(22, 18, 31, 0.58);
+  --resident-strong: rgba(0, 0, 0, 0.82);
+  --resident-line: rgba(92, 83, 132, 0.48);
 }
 
 body[data-guide="solitude"] {
-  --resident-rgb: 145, 132, 219;
-  --resident-soft: rgba(145, 132, 219, 0.16);
-  --resident-mid: rgba(145, 132, 219, 0.3);
-  --resident-strong: rgba(77, 68, 132, 0.62);
-  --resident-line: rgba(189, 181, 255, 0.34);
+  --resident-rgb: 246, 246, 255;
+  --resident-soft: rgba(255, 255, 255, 0.24);
+  --resident-mid: rgba(245, 246, 255, 0.46);
+  --resident-strong: rgba(219, 225, 255, 0.56);
+  --resident-line: rgba(255, 255, 255, 0.5);
 }
 
 body[data-guide="affection"] {
-  --resident-rgb: 235, 151, 190;
-  --resident-soft: rgba(235, 151, 190, 0.17);
-  --resident-mid: rgba(235, 151, 190, 0.34);
-  --resident-strong: rgba(145, 71, 108, 0.58);
-  --resident-line: rgba(255, 194, 221, 0.38);
+  --resident-rgb: 255, 143, 195;
+  --resident-soft: rgba(255, 143, 195, 0.28);
+  --resident-mid: rgba(255, 112, 180, 0.5);
+  --resident-strong: rgba(168, 42, 101, 0.64);
+  --resident-line: rgba(255, 190, 222, 0.56);
 }
 
 body[data-guide="regret"] {
-  --resident-rgb: 154, 174, 231;
-  --resident-soft: rgba(154, 174, 231, 0.16);
-  --resident-mid: rgba(154, 174, 231, 0.31);
-  --resident-strong: rgba(66, 79, 131, 0.58);
-  --resident-line: rgba(192, 207, 255, 0.35);
+  --resident-rgb: 132, 220, 255;
+  --resident-soft: rgba(132, 220, 255, 0.26);
+  --resident-mid: rgba(100, 206, 255, 0.48);
+  --resident-strong: rgba(20, 105, 155, 0.64);
+  --resident-line: rgba(184, 236, 255, 0.54);
 }
 
 body[data-guide="freedom"] {
-  --resident-rgb: 246, 202, 93;
-  --resident-soft: rgba(246, 202, 93, 0.16);
-  --resident-mid: rgba(246, 202, 93, 0.3);
-  --resident-strong: rgba(148, 103, 30, 0.52);
-  --resident-line: rgba(255, 222, 136, 0.36);
+  --resident-rgb: 255, 212, 52;
+  --resident-soft: rgba(255, 212, 52, 0.28);
+  --resident-mid: rgba(255, 201, 20, 0.52);
+  --resident-strong: rgba(168, 111, 0, 0.66);
+  --resident-line: rgba(255, 226, 112, 0.58);
 }
 
 body[data-question-phase="light"] .quiz {
   background:
-    radial-gradient(circle at 50% 16%, var(--resident-soft, rgba(220,200,255,0.14)), transparent 18rem),
-    linear-gradient(180deg, #05040a 0%, #100a1b 48%, #040307 100%) !important;
+    radial-gradient(circle at 50% 16%, var(--resident-soft, rgba(220,200,255,0.18)), transparent 19rem),
+    radial-gradient(circle at 82% 78%, color-mix(in srgb, var(--resident-soft) 72%, transparent), transparent 24rem),
+    linear-gradient(180deg, #05040a 0%, color-mix(in srgb, rgb(var(--resident-rgb, 80, 66, 130)) 12%, #100a1b) 48%, #040307 100%) !important;
 }
 
 body[data-question-phase="deep"] .quiz {
   background:
-    radial-gradient(circle at 50% 18%, var(--resident-mid, rgba(220,200,255,0.24)), transparent 20rem),
-    radial-gradient(circle at 80% 78%, var(--resident-strong, rgba(80,60,120,0.36)), transparent 26rem),
-    linear-gradient(180deg, #040309 0%, #100817 44%, #030207 100%) !important;
+    radial-gradient(circle at 50% 18%, var(--resident-mid, rgba(220,200,255,0.32)), transparent 21rem),
+    radial-gradient(circle at 80% 78%, var(--resident-strong, rgba(80,60,120,0.5)), transparent 27rem),
+    radial-gradient(circle at 12% 78%, color-mix(in srgb, var(--resident-mid) 72%, transparent), transparent 24rem),
+    linear-gradient(180deg, color-mix(in srgb, rgb(var(--resident-rgb, 80, 66, 130)) 18%, #040309) 0%, color-mix(in srgb, rgb(var(--resident-rgb, 80, 66, 130)) 24%, #100817) 44%, #030207 100%) !important;
 }
 
 body[data-question-phase="light"] .quiz-room::before {
@@ -4184,10 +4186,11 @@ body[data-question-phase="deep"] .quiz-door {
 
 body[data-question-phase="light"] .quiz-intro,
 body[data-question-phase="light"] .question-card {
-  border-color: rgba(255, 239, 252, 0.15) !important;
+  border-color: var(--resident-line, rgba(255, 239, 252, 0.2)) !important;
   background:
-    linear-gradient(135deg, rgba(10, 7, 18, 0.66), rgba(9, 6, 15, 0.42)),
-    rgba(6, 4, 10, 0.42) !important;
+    radial-gradient(circle at 92% 10%, var(--resident-soft, rgba(210,180,255,0.18)), transparent 36%),
+    linear-gradient(135deg, rgba(10, 7, 18, 0.72), rgba(9, 6, 15, 0.46)),
+    rgba(6, 4, 10, 0.48) !important;
 }
 
 body[data-question-phase="deep"] .quiz-intro,
@@ -4204,10 +4207,10 @@ body[data-question-phase="deep"] .question-card {
 }
 
 body[data-question-phase="light"] .answer-button {
-  border-color: rgba(255, 244, 255, 0.12) !important;
+  border-color: color-mix(in srgb, var(--resident-line, rgba(255, 244, 255, 0.2)) 76%, rgba(255,255,255,0.12)) !important;
   background:
-    radial-gradient(circle at 100% 50%, var(--resident-soft, rgba(210,180,255,0.12)), transparent 36%),
-    linear-gradient(135deg, rgba(255,255,255,0.088), rgba(255,255,255,0.022) 52%, rgba(255,255,255,0.045)),
+    radial-gradient(circle at 100% 50%, var(--resident-soft, rgba(210,180,255,0.2)), transparent 38%),
+    linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.026) 52%, rgba(255,255,255,0.05)),
     rgba(8, 5, 14, 0.54) !important;
 }
 
