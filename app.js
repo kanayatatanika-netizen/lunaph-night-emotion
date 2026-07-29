@@ -20,7 +20,7 @@ const emotions = {
     deepDescription:
       "今のあなたは、めろあがベッドの真ん中で白薔薇を抱えて座っている状態です。好きな人の返信が遅いだけで支度が止まり、相手の機嫌ひとつで今日の自分の価値まで決めそうになる。生活のリモコンを相手に渡しかけています。でもそれは、愛せる力が強すぎて置き場所を失っているだけです。",
     shareLine: "好きな人の一言で、一日の価値が決まってしまう夜。",
-    sceneTitle: "好きが接客に漏れるタイプあるある",
+    sceneTitle: "愛情あるある",
     lightScenes: [
       "朝から、大切な人の返信で一日の温度が変わる。",
       "卓では平気な顔をしているのに、裏で「今日ちょっと冷たかった？」を考える。",
@@ -53,7 +53,7 @@ const emotions = {
     deepDescription:
       "今のあなたは、ふろむが頭の中で警報を鳴らしっぱなしの状態です。何も起きてないのに、もう終わった気がする。返信が短い、目線が違う、誰かの一言が雑だった。それだけで最悪の未来まで勝手に上映されて、まだ怪我してないのに心だけ全身包帯です。",
     shareLine: "何も起きてないのに、心だけ先に最悪まで行ってしまう夜。",
-    sceneTitle: "空気を読みすぎるタイプあるある",
+    sceneTitle: "恐怖あるある",
     lightScenes: [
       "返信が短いだけで、嫌われた可能性を考え始める。",
       "店の空気が変わると、全部自分のせいかもと思う。",
@@ -86,7 +86,7 @@ const emotions = {
     deepDescription:
       "今のあなたは、くれすが帰り道の端っこで待っている状態です。人前では笑えていたのに、帰宅した瞬間に急に無音が刺さる。通知はあるのに、欲しい人からの言葉だけない。誰かといた日の方が、ひとりが濃くなる。正直、布団に入った瞬間が一番きつい夜です。",
     shareLine: "人と会った日の帰り道ほど、ひとりが濃くなる夜。",
-    sceneTitle: "満卓でもひとりになるタイプあるある",
+    sceneTitle: "孤独あるある",
     lightScenes: [
       "仕事中は笑えていたのに、帰り道で急に静かになる。",
       "通知はあるのに、欲しい言葉だけ来ていない気がする。",
@@ -119,7 +119,7 @@ const emotions = {
     deepDescription:
       "今のあなたは、みちるが窓を全開にしている状態です。店用、SNS用、好きな人用、友達用の自分を切り替えすぎて、本体が迷子です。『こう見られたい』に合わせ続けて、素の自分だけログアウトしかけています。自由になりたいのは逃げじゃなく、生存ルートです。",
     shareLine: "ちゃんとしているほど、自分だけが置いていかれる夜。",
-    sceneTitle: "キャラ固定されたくないタイプあるある",
+    sceneTitle: "自由あるある",
     lightScenes: [
       "求められているキャラを出しすぎて、帰宅後に無になる。",
       "本当は嫌なことを、嫌と言えずに笑って流す。",
@@ -152,7 +152,7 @@ const emotions = {
     deepDescription:
       "今のあなたは、くゆりが同じページを何十回も開いている状態です。寝る前の脳内反省会が長すぎて、もはや夜より自分への説教が本編。終わった会話を再生して、毎回違う選択肢を選び直している。もう変えられないのに、頭の中ではまだ延長戦をしている夜です。",
     shareLine: "終わったはずの場面を、頭の中で何回もやり直す夜。",
-    sceneTitle: "退勤後に脳内反省会するタイプあるある",
+    sceneTitle: "後悔あるある",
     lightScenes: [
       "退勤後、今日の返しを思い出して『もっと可愛く言えた』ってなる。",
       "お風呂中に昔の会話のミスを思い出して、普通に一回終わる。",
@@ -618,7 +618,7 @@ function renderResult(key) {
     elements.resultMainArt.alt = "";
   }
   const activeScenes = resultDepth === "deep" ? view.deep : view.light;
-  elements.sceneTitle.textContent = `${resultDepth === "deep" ? "重度" : "軽度"}の${view.typeName}あるある`;
+  elements.sceneTitle.textContent = `${resultDepth === "deep" ? "重度" : "軽度"}の${view.emotion}あるある`;
   elements.sceneList.innerHTML = activeScenes.map((scene) => `<li>${scene}</li>`).join("");
   elements.emotionNumber.textContent = emotion.order;
   elements.worldName.textContent = `あなたのパートナーは、${view.partner}`;
